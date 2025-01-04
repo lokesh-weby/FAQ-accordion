@@ -9,6 +9,7 @@ body{
     margin: unset;
     padding: unset;
     overflow: hidden;
+    background-color: var(--light-pink);
 }
 body main{
     position: absolute;
@@ -16,7 +17,7 @@ body main{
     top: 50%;
     width: 90%;
     transform: translate(-50%,-50%);
-    background-color: white;
+    background-color: var(--white);
     box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.297);
 }
 input[type="radio"]:checked + .answer {
@@ -37,7 +38,8 @@ input[type="radio"]:checked + .answer {
     background-image: url('assets/images/icon-plus.svg');
     background-repeat: no-repeat;
     background-size: contain;
-    background-position: center; 
+    background-position: center;
+    /* margin: auto 0;  */
 }
 .minus{
     background-image: url("assets/images/icon-minus.svg");
@@ -47,6 +49,7 @@ label{
     cursor: pointer;
 }
 main section{
+ 
     border-bottom:1px solid rgba(128, 128, 128, 0.222) ;
     padding: 10px;
 }
@@ -58,12 +61,16 @@ main section:last-child{
     color: var(--grayish-purple);
     overflow: hidden;
     height: 0px;  
-}@media screen and (min-width: 1080px){
+}
+label:hover{
+    color:rgb(188, 17, 188);
+}
+@media screen and (min-width: 780px){
     body main{
-        width: 30%;
+        width: 35%;
     }
     #bg{
-        height: 50%;
+        height: 45%;
         background-image: url("assets/images/background-pattern-desktop.svg");
     }
 }
